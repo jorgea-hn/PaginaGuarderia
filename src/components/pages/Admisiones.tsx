@@ -2,7 +2,7 @@ import Navbar from "../Navbar"
 import Footer from "../Footer"
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import db from "../../../firebaseConfig";
+import db from "../../firebaseConfig";
 
 
 function Admisiones() {

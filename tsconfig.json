@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "firebaseConfig.tsx"],
+  "include": ["src", "src/firebaseConfig.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
