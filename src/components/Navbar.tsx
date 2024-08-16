@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {Link} from "react-router-dom";
-import logo from "../assets/icon-logo.png"
+import logo from "../assets/logo-guarderia.png"
 
 
 const Navbar: React.FC = () => {
@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
     return (
         <>
-            <div className="w-full h-16 fixed bg-slate-50">
+            <div className="w-full h-18 fixed bg-slate-50">
                 <div className="flex justify-between p-2">
                     <div>
                         <img src={logo} alt="logo" className="w-40 ml-4"/>

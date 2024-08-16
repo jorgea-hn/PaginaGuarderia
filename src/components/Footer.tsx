@@ -1,4 +1,4 @@
-import escudo from "../assets/escudo.png"
+import escudo from "../assets/logo-guarderia.png"
 import icon_telefono from "../assets/telefono.png"
 import icon_correo from "../assets/correo.png"
 import icon_direccion from "../assets/direccion.png"
@@ -6,7 +6,7 @@ import icon_direccion from "../assets/direccion.png"
 const Footer: React.FC = () => {
     return (
         <div className="flex justify-around bg-slate-50 h-60 p-8">
-            <img className="w-40" src={escudo} alt="" />
+            <img className="w-80 h-40" src={escudo} alt="" />
             <div>
                 <h3 className="text-center text-xl pb-4">Contacto</h3>
                 <ul>

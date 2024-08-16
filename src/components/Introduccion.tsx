@@ -37,8 +37,9 @@ const Introduccion: React.FC = () => {
                 <h2 className="px-4 text-4xl text-center">Bienvenidos</h2>
                 <div className="flex justify-around pt-16">
                     <div className="px-4 w-1/2">
-                        <h2 className="text-2xl pt-10 pb-6 px-16">Jardin Infantil Happy Face</h2>
-                        <p className="px-16">La propuesta educativa del Jardín Infantil Melodías se sustenta en un modelo pedagógico fundamentado desde la pedagogía del amor para formar niños y niñas con capacidad de ser felices y que aporten a la construcción de relaciones armoniosas. Cuenta con el diseño de proyectos lúdicos pedagógicos inmersivos que potencian la capacidad de asombro en los niños y las niñas para el desarrollo del pensamiento creativo.</p>
+                        <h2 className="text-2xl pt-10 pb-6 px-16">Jardin Infantil Pasitos Felices</h2>
+                        <p className="px-16 text-justify">La propuesta educativa del Jardín Infantil Pasitos Felices se basa en un modelo pedagógico fundamentado en la pedagogía del amor, con el objetivo de formar niños y niñas felices, capaces de construir relaciones armoniosas. Nuestro enfoque incluye proyectos lúdicos pedagógicos inmersivos, diseñados para potenciar la capacidad de asombro en los pequeños, fomentando el desarrollo del pensamiento creativo.
+                        </p>
                     </div>
                     <div className="px-4 w-1/2">
                         <img className="rounded-xl" src="https://www.eichiquilin.com/web/wp-content/uploads/2016/06/chiquilin_como-saber-si-una-guarderia-es-buena.jpg" alt="jardin" />
@@ -50,15 +51,15 @@ const Introduccion: React.FC = () => {
             <div className="min-h-screen/2  px-6">
                 <div className="flex py-12 justify-center">
                     <div className="w-1/4 h-40 p-2 bg-indigo-400 mx-6 flex flex-col items-center justify-center rounded-md">
-                        <h3 className="text-center">20</h3>
+                        <h3 className="text-center">15</h3>
                         <p className="text-center">Años de experiencia</p>
                     </div>
                     <div className="w-1/4 p-2 bg-indigo-400 mx-6 flex flex-col items-center justify-center rounded-md">
-                        <h3 className="text-center">440+</h3>
+                        <h3 className="text-center">300+</h3>
                         <p className="text-center">Estudiantes felices</p>
                     </div>
                     <div className="w-1/4 p-2 bg-indigo-400 mx-6 flex flex-col items-center justify-center rounded-md">
-                        <h3 className="text-center">100+</h3>
+                        <h3 className="text-center">74+</h3>
                         <p className="text-center">Graduados</p>
                     </div>
                 </div>
@@ -66,22 +67,21 @@ const Introduccion: React.FC = () => {
 
 
             <div className="min-h-screen  bg-blue-300 px-6 pt-20">
-                <h2 className="px-4 text-4xl text-center">Fundamentos del modelo pedagogico</h2>
-                <p></p>
+                <h2 className="px-4 text-4xl text-center">Fundamentos del modelo pedagógico</h2>
                 <div className="flex flex-col">
                     <div className="flex py-12">
                         <div className="flex w-1/2 px-14 items-center">
                             <img className="w-20 h-20 mr-6" src={icon_inclusion} alt="" />
                             <div>
-                                <h4 className="text-xl">Inclusion</h4>
-                                <p className="text-justify"> Se fomenta un ambiente inclusivo donde todos los niños y niñas, independientemente de sus habilidades, características o circunstancias individuales, se sientan valorados, respetados y aceptados, promoviendo la diversidad y la equidad. </p>
+                                <h4 className="text-xl">Inclusión</h4>
+                                <p className="text-justify"> Fomentamos un ambiente inclusivo en el que todos los niños y niñas, independientemente de sus habilidades, características o circunstancias individuales, se sientan valorados, respetados y aceptados. Promovemos la diversidad y la equidad, asegurando que cada niño se desarrolle en un entorno que celebra sus diferencias y fortalezas.</p>
                             </div>
                         </div>
                         <div className="flex w-1/2 px-14 items-center">
                             <img className="w-20 h-20 mr-6" src={icon_lenguaje} alt="" />
                             <div>
-                                <h4 className="text-xl">Lenguaje y comunicacion</h4>
-                                <p className="text-justify">  Se estimula el desarrollo del lenguaje y la comunicación en los niños y niñas a través de actividades que promuevan la expresión oral, la comprensión auditiva, la lectura, la escritura y el uso de otros medios de comunicación, facilitando así su integración en el mundo social y académico. </p>
+                                <h4 className="text-xl">Lenguaje y Comunicación</h4>
+                                <p className="text-justify">Estimulamos el desarrollo del lenguaje y la comunicación a través de actividades diseñadas para fomentar la expresión oral, la comprensión auditiva, la lectura, la escritura, y el uso de diversos medios de comunicación. Esto facilita la integración de los niños en el mundo social y académico, proporcionando las bases para un aprendizaje continuo.</p>
                             </div>
                         </div>
                     </div>
@@ -91,14 +91,14 @@ const Introduccion: React.FC = () => {
                             <img className="w-20 h-20 mr-6" src={icon_seguridad} alt="" />
                             <div>
                                 <h4 className="text-xl">Seguridad</h4>
-                                <p className="text-justify"> Se prioriza la seguridad física y emocional de los niños y niñas, creando un ambiente libre de riesgos y amenazas donde puedan desarrollarse de manera segura y confiada.</p>
+                                <p className="text-justify">Priorizamos la seguridad física y emocional de los niños y niñas, creando un entorno libre de riesgos y amenazas. Nuestro objetivo es que cada niño pueda desarrollarse de manera segura y confiada, sabiendo que está en un espacio protegido y lleno de cuidado.</p>
                             </div>
                         </div>
                         <div className="flex w-1/2 px-14 items-center">
                             <img className="w-20 h-20 mr-6" src={icon_linguistica} alt="" />
                             <div>
-                                <h4 className="text-xl">Inmersion linguistica</h4>
-                                <p className="text-justify"> Se ofrece un ambiente de inmersión lingüística en inglés, donde los niños y niñas tienen la oportunidad de escuchar y usar el idioma de manera natural y significativa en situaciones cotidianas, promoviendo así su adquisición y desarrollo del inglés como segunda lengua. </p>
+                                <h4 className="text-xl">Inmersión Lingüística</h4>
+                                <p className="text-justify">Ofrecemos un ambiente de inmersión lingüística en inglés, brindando a los niños y niñas la oportunidad de escuchar y utilizar el idioma de manera natural y significativa en situaciones cotidianas. Esto promueve la adquisición y desarrollo del inglés como segunda lengua, preparando a los pequeños para un futuro globalizado.</p>
                             </div>
                         </div>
 
