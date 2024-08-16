@@ -5,8 +5,8 @@ import icon_direccion from "../assets/direccion.png"
 
 const Footer: React.FC = () => {
     return (
-        <div className="flex justify-around bg-slate-50 h-60 p-8">
-            <img className="w-80 h-40" src={escudo} alt="" />
+        <div className="flex justify-around bg-slate-50 h-50 p-8">
+            <img className="w-80 h-28" src={escudo} alt="" />
             <div>
                 <h3 className="text-center text-xl pb-4">Contacto</h3>
                 <ul>
