@@ -2,10 +2,10 @@ import Navbar from "../Navbar"
 import Footer from "../Footer"
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import db from "../../../firebaseConfig"
+import db from "../../../firebaseConfig";
 
 
-const Admisiones: React.FC = () => {
+function Admisiones() {
 
     const [formData, setFormData] = useState({
         nombre: "",
@@ -29,11 +29,11 @@ const Admisiones: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
-            const formularioRef = collection(db, "formulario");
+            const formularioRef = collection( db, "formulario");
             await addDoc(formularioRef, formData);
             console.log("Datos guardados en Firebase");
             setEnviado(true); // Marca el formulario como enviado con éxito
-            setFormData({ // Borra la información del formulario
+            setFormData({
                 nombre: "",
                 fechaNacimiento: "",
                 nombreMadre: "",
@@ -47,7 +47,7 @@ const Admisiones: React.FC = () => {
     };
 
     return (
-        <div >
+        <div>
             <Navbar />
             <div className="flex justify-center pt-20">
                 <form onSubmit={handleSubmit} className="space-y-4 w-2/3 ">
@@ -67,8 +67,7 @@ const Admisiones: React.FC = () => {
                             required
                             value={formData.nombre}
                             onChange={handleChange}
-                            className="border rounded-md px-2 py-1 w-full"
-                        />
+                            className="border rounded-md px-2 py-1 w-full" />
                     </div>
                     <div>
                         <label htmlFor="fechaNacimiento" className="block">
@@ -81,8 +80,7 @@ const Admisiones: React.FC = () => {
                             required
                             value={formData.fechaNacimiento}
                             onChange={handleChange}
-                            className="border rounded-md px-2 py-1 w-full"
-                        />
+                            className="border rounded-md px-2 py-1 w-full" />
                     </div>
                     <div>
                         <label htmlFor="nombreMadre" className="block">
@@ -96,8 +94,7 @@ const Admisiones: React.FC = () => {
                             required
                             value={formData.nombreMadre}
                             onChange={handleChange}
-                            className="border rounded-md px-2 py-1 w-full"
-                        />
+                            className="border rounded-md px-2 py-1 w-full" />
                     </div>
                     <div>
                         <label htmlFor="nombrePadre" className="block">
@@ -111,8 +108,7 @@ const Admisiones: React.FC = () => {
                             required
                             value={formData.nombrePadre}
                             onChange={handleChange}
-                            className="border rounded-md px-2 py-1 w-full"
-                        />
+                            className="border rounded-md px-2 py-1 w-full" />
                     </div>
                     <div>
                         <label htmlFor="telefono" className="block">
@@ -125,8 +121,7 @@ const Admisiones: React.FC = () => {
                             placeholder="Teléfono de contacto"
                             value={formData.telefono}
                             onChange={handleChange}
-                            className="border rounded-md px-2 py-1 w-full"
-                        />
+                            className="border rounded-md px-2 py-1 w-full" />
                     </div>
                     <div className="flex items-center">
                         <input
@@ -135,8 +130,7 @@ const Admisiones: React.FC = () => {
                             name="aceptaPolitica"
                             checked={formData.aceptaPolitica}
                             onChange={handleChange}
-                            className="mr-2"
-                        />
+                            className="mr-2" />
                         <label htmlFor="aceptaPolitica" className="text-sm">
                             Acepto la política de privacidad
                         </label>
@@ -148,7 +142,7 @@ const Admisiones: React.FC = () => {
             </div>
             <Footer />
         </div>
-    )
+    );
 }
 
 export default Admisiones
