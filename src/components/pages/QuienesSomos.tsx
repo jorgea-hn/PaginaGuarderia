@@ -1,11 +1,8 @@
 import Navbar from "../Navbar"
 import Footer from "../Footer"
 
-import icon_perfil from "../../assets/perfil.png"
-
-
 import profesora1 from "../../assets/profe1.jpg"
-import profesora2 from "../../assets/profe2.png"
+
 
 const QuienesSomos: React.FC = () => {
 
