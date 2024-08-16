@@ -4,7 +4,7 @@ import Footer from "../Footer"
 import icon_perfil from "../../assets/perfil.png"
 
 
-import profesora1 from "../../assets/profe1.png"
+import profesora1 from "../../assets/profe1.jpg"
 import profesora2 from "../../assets/profe2.png"
 
 const QuienesSomos: React.FC = () => {
@@ -59,7 +59,7 @@ const QuienesSomos: React.FC = () => {
 
                     <div className="rounded-md bg-cyan-50 p-4 mx-2 w-1/3 mx-14 overflow-hidden shadow-lg">
                         <div className="py-4">
-                            <img className="w-40 mx-auto" src={icon_perfil} alt="foto" />
+                            <img className="w-40 mx-auto" src={profesora1} alt="foto" />
                         </div>
                         <h3>Laura Rodríguez</h3>
                         <h4>Coordinadora de Educación Infantil</h4>
@@ -68,7 +68,7 @@ const QuienesSomos: React.FC = () => {
 
                     <div className="rounded-md bg-cyan-50 p-4 mx-2 w-1/3 mx-14">
                         <div className="py-4">
-                            <img className="w-40  mx-auto rounded-md" src={profesora2} alt="foto" />
+                            <img className="w-40  mx-auto rounded-md" src={profesora1} alt="foto" />
                         </div>
                         <h3>María Gómez</h3>
                         <h4>Especialista en Desarrollo Infantil</h4>
